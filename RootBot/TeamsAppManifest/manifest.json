@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.15/MicrosoftTeams.schema.json",
+  "version": "1.0.0",
+  "manifestVersion": "1.15",
+  "id": "<YOUR BOT APP ID>",
+  "packageName": "com.teams.sample.skillbot",
+  "developer": {
+    "name": "Microsoft",
+    "websiteUrl": "https://www.microsoft.com",
+    "privacyUrl": "https://www.teams.com/privacy",
+    "termsOfUseUrl": "https://www.teams.com/termsofuser"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "name": {
+    "short": "SkillBot",
+    "full": "TeamsSkillBot"
+  },
+  "description": {
+    "short": "Skill Bot",
+    "full": "Skill Bot Demo"
+  },
+  "accentColor": "#FFFFFF",
+  "bots": [
+    {
+      "botId": "<YOUR BOT APP ID>",
+      "scopes": [
+        "personal",
+        "groupchat",
+        "team"
+      ],
+      "supportsFiles": false,
+      "isNotificationOnly": false,
+      "commandLists": [
+        {
+          "scopes": [
+            "personal",
+            "groupchat",
+            "team"
+          ]
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "webApplicationInfo": {
+    "id": "<YOUR BOT APP ID>",
+    "resource": "api://<YOUR BOT APP ID>"
+  },
+  "validDomains": []
+}
