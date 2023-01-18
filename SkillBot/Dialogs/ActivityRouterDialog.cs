@@ -195,9 +195,10 @@ namespace Microsoft.Bot.Samples.SkillBot.Dialogs
                 }
             }
 
-            var validDate = DateTime.TryParse(categories.First(x => x.Key == "Date").Value.Text, out DateTime travelDate);
+            var validDate = categories.Any(x => x.Key == "Date") ? DateTime.TryParse(categories.First(x => x.Key == "Date").Value.Text, out DateTime travelDate) : false;
+            var bookingDate = categories.Any(x => x.Key == "Date") ? categories.First(x => x.Key == "Date").Value.Text : null;
 
-            var activityValue = $"{{\"origin\": \"\", \"destination\": \"{categories.First(x => x.Key == "Destination").Value.Text}\", \"travelDate\": \"{categories.First(x => x.Key == "Date").Value.Text}\", \"multipleDates\": \"{!validDate}\"}}";
+            var activityValue = $"{{\"origin\": \"\", \"destination\": \"{categories.First(x => x.Key == "Destination").Value.Text}\", \"travelDate\": \"{bookingDate}\", \"multipleDates\": \"{!validDate}\"}}";
             return (JObject.Parse(activityValue), activityValue);
 
         }

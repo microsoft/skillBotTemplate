@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{09E72AFA-6A09-4614-8E52-5936E1B71BFE}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		PersonalAssistantBot.bot = PersonalAssistantBot.bot
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RootBot", "RootBot\RootBot.csproj", "{F5B3C10A-00D2-4D76-8365-51B872627BE3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkillBot", "SkillBot\SkillBot.csproj", "{64EE811B-5DA6-44B2-A61D-309AEF70875F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{939B2AC1-AF7F-4713-BD8D-4E8C26C5423F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkillBot", "Templates\SkillBot\SkillBot.csproj", "{C991EAAD-10E4-4CFC-9D6E-2B363A51CAC9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RootBot", "Templates\RootBot\RootBot.csproj", "{BB13C4C8-34AB-42A9-9F3E-443CF0F1258A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5B3C10A-00D2-4D76-8365-51B872627BE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5B3C10A-00D2-4D76-8365-51B872627BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5B3C10A-00D2-4D76-8365-51B872627BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5B3C10A-00D2-4D76-8365-51B872627BE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64EE811B-5DA6-44B2-A61D-309AEF70875F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64EE811B-5DA6-44B2-A61D-309AEF70875F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64EE811B-5DA6-44B2-A61D-309AEF70875F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64EE811B-5DA6-44B2-A61D-309AEF70875F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C991EAAD-10E4-4CFC-9D6E-2B363A51CAC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C991EAAD-10E4-4CFC-9D6E-2B363A51CAC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C991EAAD-10E4-4CFC-9D6E-2B363A51CAC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C991EAAD-10E4-4CFC-9D6E-2B363A51CAC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB13C4C8-34AB-42A9-9F3E-443CF0F1258A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB13C4C8-34AB-42A9-9F3E-443CF0F1258A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB13C4C8-34AB-42A9-9F3E-443CF0F1258A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB13C4C8-34AB-42A9-9F3E-443CF0F1258A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C991EAAD-10E4-4CFC-9D6E-2B363A51CAC9} = {939B2AC1-AF7F-4713-BD8D-4E8C26C5423F}
+		{BB13C4C8-34AB-42A9-9F3E-443CF0F1258A} = {939B2AC1-AF7F-4713-BD8D-4E8C26C5423F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {383F2F9C-6179-4E15-8222-C5CD410D646E}
+	EndGlobalSection
+EndGlobal
